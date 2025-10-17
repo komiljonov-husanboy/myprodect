@@ -1,0 +1,42 @@
+
+.build__product{
+padding: 114.11px 0px;
+
+}
+.product__title {
+    text-align: center;
+    @include Display($items:center, $justify:center, $gap:0);
+    @include TextStyle($FW: 700, $FS: 32px, $LH: 100%, $LS: 0px, $CLR: $clr-darkblack);
+}
+.product__list {
+    @include  Display($items:start, $justify:space-between, $gap:0)
+
+}
+.product__item > h3{
+    @include TextStyle($FW: 600, $FS: 22px, $LH: 100%, $LS: 0px, $CLR: $clr-darkblack);
+
+}
+.product__item > p{
+    width: 200px;
+    margin-top: 13px;
+    @include TextStyle($FW: 400, $FS: 16px, $LH: 26px, $LS: 0px, $CLR: $clr-darkblack);
+}
+.product__item > img{
+    margin-top: 56px;
+    margin-bottom: 30px;
+}
+.product__btn{
+     @include BtnStyle($BC:$clr-green, $BR:4px ,$P: 15px 25px , $BCR:$clr-green);
+     @include TextStyle($FW: 700, $FS: 16px, $LH: 100%, $LS: 0px, $CLR: $clr-white);
+
+     display: block;
+     margin: 0 auto; 
+     margin-top: 34px;
+}
+
+.hero__end{
+    background-color:$bg-gray;
+    border-bottom-left-radius: 60%;
+    border-bottom-right-radius: 60%
+}
+

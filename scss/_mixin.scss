@@ -1,0 +1,22 @@
+@mixin Display($items, $justify, $gap) {
+    display: flex;
+    align-items: $items;
+    justify-content: $justify;
+    gap: $gap;
+}
+
+@mixin TextStyle($FW, $FS, $LH, $LS, $CLR) {
+    font-weight: $FW;
+    font-size: $FS;
+    line-height: $LH;
+    letter-spacing: $LS;
+    color: $CLR;
+}
+
+@mixin BtnStyle($BC, $P , $BR ,$BCR) {
+    padding: $P;
+    border: 2px solid $BC;
+    border-radius: $BR;
+    background-color:$BCR;
+    transition: all 0.3s;
+}

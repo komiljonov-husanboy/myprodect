@@ -1,0 +1,46 @@
+.hero__section {
+    padding: 25px 0;
+    background-color: $bg-gray;
+    // background-image: url("../images/header_bg.png");
+    // background-repeat: no-repeat;
+    // background-position: center bottom;
+    // background-size:contain;
+}
+
+
+.build {
+
+}
+.build__wrapper {
+    @include Display($items:start, $justify: space-between, $gap:0);
+}
+.build__title{
+    padding: 145px 0;
+    width: 458px;
+}
+.build__title > h1 {
+    width: 369px;
+    margin-bottom: 18px;
+    @include TextStyle($FW: 700, $FS: 40px, $LH: 60px, $LS: 0px, $CLR: $clr-darkblack);
+}
+.build__title > p {
+    margin-bottom: 45px;
+
+    @include TextStyle($FW: 400, $FS: 18px, $LH: 28px, $LS: 0px, $CLR: $clr-darkblack);
+}
+
+.build__btn {
+ @include BtnStyle($BC:$clr-green, $BR:4px ,$P: 15px 35px ,$BCR:$clr-green);
+@include TextStyle($FW: 700, $FS: 16px, $LH: 100%, $LS: 0px, $CLR: $clr-white);
+}
+.build__vd-icon {
+@include TextStyle($FW: 600, $FS: 16px, $LH: 100%, $LS: 0px, $CLR: $clr-green);
+
+
+}
+.build__btn-img {
+  margin-right: 9px; 
+  margin-left: 30.50px; 
+}
+
+

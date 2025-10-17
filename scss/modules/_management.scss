@@ -1,0 +1,66 @@
+.management__section {
+
+  padding: 150px 0;
+  background-color: $clr-white;
+}
+.managment__wrapper{
+    @include  Display($items:center, $justify:space-between, $gap:0)
+}
+.managment__wrappers{
+    margin-top: 150px;
+    @include  Display($items:center, $justify:space-between, $gap:0)
+
+}
+
+.management__selector > h6{
+    @include TextStyle($FW: 600, $FS: 16px, $LH: 26px, $LS: 0px, $CLR: $clr-darkblack);
+    margin-bottom: 12px;
+
+}
+
+.management__selector{
+  width: 450px;
+}
+.management__selector > p{
+    @include TextStyle($FW: 400, $FS: 16px, $LH: 26px, $LS: 0px, $CLR: $clr-darkblack);
+    margin-bottom: 25px;
+
+}
+.management__info {
+    margin-bottom: 8px;
+    @include TextStyle($FW: 600, $FS: 16px, $LH: 100%, $LS: 0px, $CLR: $clr-darkblack);
+
+}
+.management__title {
+    @include TextStyle($FW: 700, $FS: 32px, $LH: 100%, $LS: 0px, $CLR: $clr-darkblack);
+    margin-bottom: 131px;
+}
+
+.management__support {
+    @include TextStyle($FW: 700, $FS: 32px, $LH: 100%, $LS: 0px, $CLR: $clr-darkblack);
+    margin-bottom: 23px;
+}
+.support__text{
+    @include TextStyle($FW: 400, $FS: 16px, $LH: 26px, $LS: 0px, $CLR: $clr-green);
+}
+.managment__list {
+  
+}
+.managment__icon {
+  margin-bottom:30px ;
+  @include  Display($items:center, $justify:space-between, $gap:30px)
+}
+
+
+
+
+
+.hero {
+
+}
+.hero__content {
+}
+.product {
+}
+.product__content {
+}
