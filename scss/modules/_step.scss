@@ -1,0 +1,31 @@
+.step__section {
+    padding: 160px 0;
+}
+.step__list {
+}
+
+.s__title{
+
+    @include TextStyle($FW: 700, $FS: 34px, $LH: 100%, $LS: 0px, $CLR: $clr-darkblack);
+}
+.step__text{
+    @include TextStyle($FW: 400, $FS: 16px, $LH: 28px, $LS: 0px, $CLR: $clr-darkblack);
+
+}
+
+.step__item {
+    width: 348px;
+    height: 360px;
+    border-radius: 10px;
+    border: 1px solid #DEDEDE;
+    text-align: start;
+}
+
+
+.step__item > p {
+
+}
+.step__title1 {
+    @include TextStyle($FW: 700, $FS: 24px, $LH: 40px, $LS: 0px, $CLR: $clr-darkblack);
+
+}

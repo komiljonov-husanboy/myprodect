@@ -1,5 +1,12 @@
 .easy__section {
-
+    background-color: $bg-gray; 
+    background-image: url("../../images/easy_bg.png"); 
+    background-repeat: no-repeat;
+    background-position: bottom center; 
+    background-size: cover;  
+    margin-bottom: -50px; 
+    padding-top: 100px;
+    
 }
  .easy{
 
@@ -18,12 +25,30 @@
     padding-top: 16px;
 }
 
-.easy__item > img{
+.item_img1{
     width: 98px;
     height: 98px;
     border: 3px solid #FF0909;
   border-radius: 50%;
 
+}
+.item_img2{
+    width: 98px;
+    height: 98px;
+    border: 3px solid #740A76;
+  border-radius: 50%;
+}
+.item_img3{
+    width: 98px;
+    height: 98px;
+    border: 3px solid #02897A;
+  border-radius: 50%;
+}
+.item_img4{
+    width: 98px;
+    height: 98px;
+    border: 3px solid #035B81;
+  border-radius: 50%;
 }
 .easy__list {
       display: grid; 
@@ -42,10 +67,18 @@
 .easy__box {
     width: 274px;
     height: 59px;
-    background-color:$clr-darkblack;
+    background-color:$clr-white;
     border-radius: 30px;
     text-align: center;
-    color: $clr-white;
+    color: $clr-darkblack;
     padding-top: 20px;
 }
+
+.easy__btn{
+    @include BtnStyle($BC:$clr-green, $P:15px 30px , $BR:4px ,$BCR:$clr-green);
+    @include TextStyle($FW: 700, $FS: 16px, $LH: 100%, $LS: 0px, $CLR: $clr-white);
+     margin-left: 460px;
+     margin-top: 63px;
+}
+
 
