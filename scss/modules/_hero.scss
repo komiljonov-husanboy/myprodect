@@ -1,46 +1,94 @@
 .hero__section {
     padding: 25px 0;
-    background-color: $bg-gray;
-    // background-image: url("../images/header_bg.png");
-    // background-repeat: no-repeat;
-    // background-position: center bottom;
-    // background-size:contain;
-}
-
-
-.build {
+    background-color:#fffefe;
 
 }
+
 .build__wrapper {
-    @include Display($items:start, $justify: space-between, $gap:0);
+    @include Display($items: center, $justify: space-between, $gap: 30px);
 }
-.build__title{
-    padding: 145px 0;
-    width: 458px;
+
+.build__title {
+    max-width: 458px;
+    width: 100%;
 }
+
 .build__title > h1 {
-    width: 369px;
-    margin-bottom: 18px;
     @include TextStyle($FW: 700, $FS: 40px, $LH: 60px, $LS: 0px, $CLR: $clr-darkblack);
+    margin-bottom: 18px;
 }
+
 .build__title > p {
     margin-bottom: 45px;
-
     @include TextStyle($FW: 400, $FS: 18px, $LH: 28px, $LS: 0px, $CLR: $clr-darkblack);
 }
 
+
+
+.hero__span{
+    @include Display($items: center, $justify: start, $gap: 20px);
+}
 .build__btn {
- @include BtnStyle($BC:$clr-green, $BR:4px ,$P: 15px 35px ,$BCR:$clr-green);
-@include TextStyle($FW: 700, $FS: 16px, $LH: 100%, $LS: 0px, $CLR: $clr-white);
+    @include BtnStyle($clr-green, $BR: 4px, $P: 15px 35px, $BCR: $clr-green);
+    @include TextStyle($FW: 700, $FS: 16px, $LH: 100%, $LS: 0px, $CLR: $clr-white);
 }
+
 .build__vd-icon {
-@include TextStyle($FW: 600, $FS: 16px, $LH: 100%, $LS: 0px, $CLR: $clr-green);
-
+    @include TextStyle($FW: 600, $FS: 16px, $LH: 100%, $LS: 0px, $CLR: $clr-green);
+}
+.build__btn-img{
+   margin-right: 10px;
 
 }
-.build__btn-img {
-  margin-right: 9px; 
-  margin-left: 30.50px; 
+.wrapper__image {
+    max-width: 600px;
+    width: 100%;
+}
+
+@media (max-width:992px) {
+    .hero__span{
+    @include Display($items: center, $justify: center, $gap: 20px);
+}
+    .build__wrapper {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .build__title {
+        padding: 40px 0;
+        max-width: 100%;
+    }
+     .build__title > h1 {
+       width: 100%;
+     }
+    .build__actions {
+        justify-content: center;
+    }
 }
 
 
+@media(max-width:776px){
+   .header__image{
+    width: 100%;
+    height: 100%;
+   }
+
+
+    
+}
+
+
+
+
+
+@media (max-width:480px) {
+     .hero__span{
+    @include Display($items: center, $justify: center, $gap: 20px);
+}
+    .build__actions {
+        flex-direction: column;
+    }
+    .build__title > h1 {
+        font-size: 32px;
+        line-height: 45px;
+    }
+}

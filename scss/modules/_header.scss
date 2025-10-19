@@ -1,50 +1,66 @@
-
-.site-header{
+.site-header {
     padding: 19px 0;
     background-color: $bg-gray;
+}
 
-}
 .header {
-    @include Display($items:start, $justify: space-between, $gap:0);
+    @include Display($items: start, $justify: space-between, $gap: 0);
 }
+
 .header__menu-nav {
-    @include Display($items: start, $justify: space-around, $gap:30px);
+    @include Display($items: start, $justify: space-around, $gap: 30px);
     margin-left: 237px;
 
 }
-.header__menu-link  {
+
+.header__menu-link {
     @include TextStyle($FW: 500, $FS: 18px, $LH: 28px, $LS: 0px, $CLR: $clr-darkblack);
 }
-.header__menu-span{
+
+.header__menu-span {
     @include TextStyle($FW: 600, $FS: 18px, $LH: 28px, $LS: 0px, $CLR: $clr-darkblack);
 }
+
 .header__sign-btn {
-    @include BtnStyle($BC:$clr-grey, $BR:4px ,$P: 12px 19px, $BCR:$clr-white);
-    @include TextStyle($FW: 600, $FS: 16px, $LH:100%, $LS: 0px, $CLR: $clr-darkblack);
+    @include BtnStyle($BC: $clr-grey, $BR: 4px, $P: 12px 19px, $BCR: $clr-white);
+    @include TextStyle($FW: 600, $FS: 16px, $LH: 100%, $LS: 0px, $CLR: $clr-darkblack);
     margin-right: 14px;
 }
+
 .header__signup-btn {
-    @include BtnStyle($BC:$clr-green, $BR:4px ,$P: 12px 19px ,$BCR:$clr-green);
-    @include TextStyle($FW: 600, $FS: 16px, $LH:100%, $LS: 0px, $CLR: $clr-white);
+    @include BtnStyle($BC: $clr-green, $BR: 4px, $P: 12px 19px, $BCR: $clr-green);
+    @include TextStyle($FW: 600, $FS: 16px, $LH: 100%, $LS: 0px, $CLR: $clr-white);
     margin-right: 14px;
 }
-.menu__icon{
-    display:none;
-}
- 
-.href{
-   align-items: end;
-}
-@media(max-width:1110px){
 
-   .header__menu-nav {
-  display: none;
-} 
-
-.header__end{
-   display: none;
+.menu__icon {
+    display: none;
 }
-.menu__icon{
+
+.wrapper__image {
     display: inline-block;
 }
+
+.href {
+    align-items: end;
+}
+
+@media(max-width:1110px) {
+
+    .header__menu-nav {
+        display: none;
+    }
+
+    .header__end {
+        display: none;
+    }
+
+    .menu__icon {
+        display: inline-block;
+
+    }
+
+    .header__right-icon {
+        display: none;
+    }
 }

@@ -1,9 +1,8 @@
 .management__section {
-
   padding: 150px 0;
   background-color: $clr-white;
 }
-.managment__wrapper{
+.managment__wrappers{
     @include  Display($items:center, $justify:space-between, $gap:0)
 }
 .managment__wrappers{
@@ -53,14 +52,38 @@
 
 
 
+@media(max-width:1046px){
+    .management{
+        // flex-direction: column;
+       
+    }
+    .managment__wrappers{
+         flex-direction: column-reverse;
+         
+    }
+    
+    .wrappers2{
+         flex-direction: column;
+         
+    }
+    .mag__responsive{
+         flex-direction: column;
 
+    }
+    .management__selector{
+        padding-top: 55.45px;
+    }
+}
 
-.hero {
+@media(max-width:560px){
+ .management__selector{
+    width: 100%;
+     text-align: center;
 
-}
-.hero__content {
-}
-.product {
-}
-.product__content {
+ }
+
+ .managment__image{
+    width: 100%;
+ }
+
 }
