@@ -2,18 +2,24 @@
     padding: 160px 0;
 }
 .step__list {
+    @include  Display($items:center, $justify:center, $gap:30px);
+    
 }
 
 .s__title{
-
+    text-align: start;
     @include TextStyle($FW: 700, $FS: 34px, $LH: 100%, $LS: 0px, $CLR: $clr-darkblack);
 }
 .step__text{
-    @include TextStyle($FW: 400, $FS: 16px, $LH: 28px, $LS: 0px, $CLR: $clr-darkblack);
+    padding: 12px 0;
 
+    text-align: start;
+    @include TextStyle($FW: 400, $FS: 16px, $LH: 28px, $LS: 0px, $CLR: $clr-darkblack);
+    
 }
 
 .step__item {
+    margin: 33px 0;
     width: 348px;
     height: 360px;
     border-radius: 10px;
@@ -21,11 +27,65 @@
     text-align: start;
 }
 
-
+.step__item > img{
+    border-radius: 10px;
+}
 .step__item > p {
+    padding: 14px 30px;
+    @include TextStyle($FW: 400, $FS: 16px, $LH: 28px, $LS: 0px, $CLR: $clr-darkblack);
 
 }
 .step__title1 {
+    padding: 0 30px;
     @include TextStyle($FW: 700, $FS: 24px, $LH: 40px, $LS: 0px, $CLR: $clr-darkblack);
+
+}
+
+.step__period{
+padding: 0 500px;
+}
+
+
+
+
+@media(max-width:1124px){
+    .step__list{
+        flex-direction: column;
+    }
+
+.s__title{
+    text-align: start;
+    @include TextStyle($FW: 700, $FS: 44px, $LH: 100%, $LS: 0px, $CLR: $clr-darkblack);
+}
+.step__text{
+    padding: 12px 0;
+    text-align: start;
+    @include TextStyle($FW: 400, $FS: 26px, $LH: 28px, $LS: 0px, $CLR: $clr-darkblack);
+    
+}
+    .step__item{
+        margin: 33px auto;
+        width: 70%;
+        height: 500px;
+    }
+    
+.step__item > img{
+    height: 60%;
+   width: 100%;
+}
+.step__item > p > {
+    padding: 14px 30px;
+    @include TextStyle($FW: 400, $FS: 26px, $LH: 28px, $LS: 0px, $CLR: $clr-darkblack);
+
+}
+.step__title1 {
+    padding: 0 30px;
+    @include TextStyle($FW: 700, $FS: 34px, $LH: 40px, $LS: 0px, $CLR: $clr-darkblack);
+
+}
+
+.step__period{
+padding: 0 50%;
+}
 
 }

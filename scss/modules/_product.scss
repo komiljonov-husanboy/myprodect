@@ -9,9 +9,7 @@
     margin-top: -50px; 
     padding-bottom: 100px;
 }
-.background__image{
 
-}
 .product__title {
     text-align: center;
     @include Display($items:center, $justify:center, $gap:0);
@@ -44,7 +42,9 @@
 }
 
 
-
+@media(max-width:1136px){
+    
+}
 
 
 @media(max-width:810px){
