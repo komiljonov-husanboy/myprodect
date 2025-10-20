@@ -3,89 +3,72 @@
 }
 .step__list {
     @include  Display($items:center, $justify:center, $gap:30px);
-    
 }
-
 .s__title{
     text-align: start;
     @include TextStyle($FW: 700, $FS: 34px, $LH: 100%, $LS: 0px, $CLR: $clr-darkblack);
 }
 .step__text{
     padding: 12px 0;
-
     text-align: start;
-    @include TextStyle($FW: 400, $FS: 16px, $LH: 28px, $LS: 0px, $CLR: $clr-darkblack);
-    
+    @include TextStyle($FW: 400, $FS: 16px, $LH: 28px, $LS: 0px, $CLR: $clr-darkblack);    
 }
-
 .step__item {
     margin: 33px 0;
     width: 348px;
     height: 360px;
     border-radius: 10px;
-    border: 1px solid #DEDEDE;
     text-align: start;
-}
-
-.step__item > img{
-    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid #DEDEDE;
 }
 .step__item > p {
     padding: 14px 30px;
     @include TextStyle($FW: 400, $FS: 16px, $LH: 28px, $LS: 0px, $CLR: $clr-darkblack);
-
 }
 .step__title1 {
     padding: 0 30px;
     @include TextStyle($FW: 700, $FS: 24px, $LH: 40px, $LS: 0px, $CLR: $clr-darkblack);
-
 }
-
-.step__period{
-padding: 0 500px;
-}
-
-
-
-
-@media(max-width:1124px){
-    .step__list{
-        flex-direction: column;
-    }
-
-.s__title{
-    text-align: start;
-    @include TextStyle($FW: 700, $FS: 44px, $LH: 100%, $LS: 0px, $CLR: $clr-darkblack);
-}
-.step__text{
-    padding: 12px 0;
-    text-align: start;
-    @include TextStyle($FW: 400, $FS: 26px, $LH: 28px, $LS: 0px, $CLR: $clr-darkblack);
-    
-}
-    .step__item{
-        margin: 33px auto;
-        width: 70%;
-        height: 500px;
-    }
-    
-.step__item > img{
-    height: 60%;
-   width: 100%;
-}
-.step__item > p > {
-    padding: 14px 30px;
-    @include TextStyle($FW: 400, $FS: 26px, $LH: 28px, $LS: 0px, $CLR: $clr-darkblack);
-
-}
-.step__title1 {
+.step__title2 {
     padding: 0 30px;
-    @include TextStyle($FW: 700, $FS: 34px, $LH: 40px, $LS: 0px, $CLR: $clr-darkblack);
-
+    @include TextStyle($FW: 700, $FS: 24px, $LH: 40px, $LS: 0px, $CLR: $clr-green);
 }
-
 .step__period{
-padding: 0 50%;
+    display: block;
+    margin: 0 auto;
+}
+@media(max-width:1100px){
+  .step__section {
+    padding: 100px 0;
+}
+.step__list{
+    flex-direction: column;
+    @include  Display($items:center, $justify:center, $gap:30px);
+}
+.step__period{
+    display: block;
+    margin: 0 auto;
+}
+.s__title , .step__text{
+    text-align: center;
+}
+.step__item {
+    margin: 33px 0;
+    width: 70%;
+    height: 400px;
+}
+.step__img{
+    width: 100%;
+    height: 60%;
+}
+}
+@media(max-width:520px){
+.step__item > p {
+    @include TextStyle($FW: 400, $FS: 14px, $LH: 25px, $LS: 0px, $CLR: $clr-darkblack);
+}
+.step__title1 , .step__title2{
+    @include TextStyle($FW: 700, $FS: 18px, $LH: 35px, $LS: 0px, $CLR: $clr-darkblack);
+}    
 }
 
-}

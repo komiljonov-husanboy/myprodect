@@ -612,12 +612,9 @@ body {
   width: 348px;
   height: 360px;
   border-radius: 10px;
-  border: 1px solid #DEDEDE;
   text-align: start;
-}
-
-.step__item > img {
-  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid #DEDEDE;
 }
 
 .step__item > p {
@@ -638,49 +635,61 @@ body {
   color: #22343D;
 }
 
-.step__period {
-  padding: 0 500px;
+.step__title2 {
+  padding: 0 30px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 40px;
+  letter-spacing: 0px;
+  color: #02897A;
 }
 
-@media (max-width: 1124px) {
+.step__period {
+  display: block;
+  margin: 0 auto;
+}
+
+@media (max-width: 1100px) {
+  .step__section {
+    padding: 100px 0;
+  }
   .step__list {
     flex-direction: column;
-  }
-  .s__title {
-    text-align: start;
-    font-weight: 700;
-    font-size: 44px;
-    line-height: 100%;
-    letter-spacing: 0px;
-    color: #22343D;
-  }
-  .step__text {
-    padding: 12px 0;
-    text-align: start;
-    font-weight: 400;
-    font-size: 26px;
-    line-height: 28px;
-    letter-spacing: 0px;
-    color: #22343D;
-  }
-  .step__item {
-    margin: 33px auto;
-    width: 70%;
-    height: 500px;
-  }
-  .step__item > img {
-    height: 60%;
-    width: 100%;
-  }
-  .step__title1 {
-    padding: 0 30px;
-    font-weight: 700;
-    font-size: 34px;
-    line-height: 40px;
-    letter-spacing: 0px;
-    color: #22343D;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
   }
   .step__period {
-    padding: 0 50%;
+    display: block;
+    margin: 0 auto;
+  }
+  .s__title, .step__text {
+    text-align: center;
+  }
+  .step__item {
+    margin: 33px 0;
+    width: 70%;
+    height: 400px;
+  }
+  .step__img {
+    width: 100%;
+    height: 60%;
+  }
+}
+@media (max-width: 520px) {
+  .step__item > p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 25px;
+    letter-spacing: 0px;
+    color: #22343D;
+  }
+  .step__title1, .step__title2 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 35px;
+    letter-spacing: 0px;
+    color: #22343D;
   }
 }/*# sourceMappingURL=main.css.map */
